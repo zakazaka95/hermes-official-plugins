@@ -11,7 +11,7 @@ jobs:
     env:
       PYTHONPATH: ${{ github.workspace }}/hermes-agent
       HERMES_AGENT_REPO: ${{ github.workspace }}/hermes-agent
-      HERMES_HOME: ${{ runner.temp }}/hermes-validation-home
+      HERMES_HOME: ${{ github.workspace }}/hermes-validation-home
     steps:
       - uses: actions/checkout@v4
         with:
